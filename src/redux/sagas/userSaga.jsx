@@ -21,6 +21,6 @@ function* loginSaga({ type, payload }) {
 }
 
 // Khai báo Saga Watcher để theo dõi action FETCH_USERS
-export function* userSaga() {
+export function* followUserSaga() {
     yield takeLatest("loginSaga", loginSaga);
 }
